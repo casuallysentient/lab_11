@@ -16,7 +16,9 @@ class Weapon:
 
 
 class Duelist:
-    pass
+    def __init(self, duelist_name, weapon_1, weapon_2, weapon_3):
+        self.duelist_name = duelist_name
+        self.weapon_inventory = [weapon_1, weapon_2, weapon_3]
 
 
 def main():
