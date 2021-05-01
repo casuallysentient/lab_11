@@ -1,5 +1,7 @@
 class Weapon:
-    pass
+    def __init__(self, weapon_name, strength):
+        self.weapon_name = weapon_name
+        self.strength = strength
 
 
 class Duelist:
@@ -18,6 +20,7 @@ def main():
     weapon_4 = Weapon("Rickenbacker 330", 0.8)
     weapon_5 = Weapon("Fender Vintera 60s Mustang", 0.6)
     weapon_6 = Weapon("Gretsch 6122", 0.4)
+    print(weapon_1.weapon_name)
 
     # Creating my Duelist objects
     # bass_player = Duelist("Aki Mizuguchi", weapon_1, weapon_2, weapon_3)
