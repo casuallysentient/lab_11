@@ -3,6 +3,9 @@ class Weapon:
         self.weapon_name = weapon_name
         self.strength = strength
 
+    def __str__(self):
+        return "\'{weapon_name}\' Weapon object (strength: {strength}).".format(weapon_name=self.weapon_name, strength=self.strength)
+
 
 class Duelist:
     pass
@@ -13,6 +16,7 @@ def main():
     Sample behavior based on the README.
     """
     # Creating my Weapon objects
+    test_weapon = Weapon('naginata', 0.75)
     weapon_1 = Weapon("Rickenbacker 4001c64", 0.8)
     weapon_2 = Weapon("Hofner 500/1", 0.6)
     weapon_3 = Weapon("Squier VI", 0.4)
@@ -20,7 +24,7 @@ def main():
     weapon_4 = Weapon("Rickenbacker 330", 0.8)
     weapon_5 = Weapon("Fender Vintera 60s Mustang", 0.6)
     weapon_6 = Weapon("Gretsch 6122", 0.4)
-    print(weapon_1.weapon_name)
+    print(test_weapon)
 
     # Creating my Duelist objects
     # bass_player = Duelist("Aki Mizuguchi", weapon_1, weapon_2, weapon_3)
